@@ -186,21 +186,35 @@ footer {
   nav { display: none; }
   .narrow { text-align: left; }
 }
-/* MINIMAL, SMALL PROFILE PHOTO */
+/* HERO FLEX LAYOUT */
+.hero-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 260px;
+  max-width: 650px;
+}
+
+/* SMALL, CLEAN HEADSHOT */
 .profile-pic {
-  width: 65px;           /* smaller size */
-  height: 65px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   object-fit: cover;
-  display: block;
-  margin: 0 auto 16px;   /* centers it and adds space below */
-  border: 1.5px solid rgba(255,255,255,0.1);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-  transition: transform 0.25s ease, opacity 0.25s ease;
-  opacity: 0.9;
+  border: 1.5px solid rgba(255,255,255,0.12);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  transition: transform 0.25s ease;
 }
 
 .profile-pic:hover {
-  transform: scale(1.03);
-  opacity: 1;
+  transform: scale(1.05);
 }
