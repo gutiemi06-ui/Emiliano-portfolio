@@ -186,20 +186,21 @@ footer {
   nav { display: none; }
   .narrow { text-align: left; }
 }
-/* MINIMAL PROFILE PHOTO */
+/* MINIMAL, SMALL PROFILE PHOTO */
 .profile-pic {
-  width: 96px;
-  height: 96px;
+  width: 65px;           /* smaller size */
+  height: 65px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 18px;
-  border: 2px solid rgba(255,255,255,0.08);
-  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
-  transition: transform 0.25s ease, opacity 0.3s ease;
-  opacity: 0.95;
+  display: block;
+  margin: 0 auto 16px;   /* centers it and adds space below */
+  border: 1.5px solid rgba(255,255,255,0.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  opacity: 0.9;
 }
 
 .profile-pic:hover {
-  transform: scale(1.04);
+  transform: scale(1.03);
   opacity: 1;
 }
