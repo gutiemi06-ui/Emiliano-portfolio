@@ -51,9 +51,23 @@ nav a:hover { color: var(--accent); }
 /* HERO */
 .hero {
   background: radial-gradient(circle at top left, #0ea5e9 0%, #0f172a 60%);
-  padding: 140px 5% 100px;
-  text-align: center;
+  padding: 130px 5% 90px;
   color: #fff;
+}
+.hero-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+.hero-text {
+  flex: 1;
+  min-width: 260px;
+  max-width: 650px;
 }
 .headline {
   font-family: "Playfair Display", serif;
@@ -62,13 +76,12 @@ nav a:hover { color: var(--accent); }
 }
 .subhead {
   max-width: 750px;
-  margin: 0 auto 28px;
   color: #e2e8f0;
   font-size: 1.05rem;
+  margin-bottom: 28px;
 }
 .cta {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 14px;
 }
@@ -97,6 +110,20 @@ nav a:hover { color: var(--accent); }
   background: var(--accent);
   color: #0f172a;
   transform: translateY(-2px);
+}
+
+/* PROFILE PIC */
+.profile-pic {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid rgba(255,255,255,0.12);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  transition: transform 0.25s ease;
+}
+.profile-pic:hover {
+  transform: scale(1.05);
 }
 
 /* SECTIONS */
@@ -162,6 +189,16 @@ p { color: var(--muted); }
 .timeline-content h3 { color: var(--accent); margin-top: 0; }
 .timeline-content ul { margin-left: 20px; color: var(--muted); }
 
+/* HIGHLIGHT BOX */
+.highlight {
+  background: rgba(56,189,248,0.1);
+  border-left: 3px solid var(--accent);
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: var(--text);
+  margin: 18px 0;
+}
+
 /* FOOTER */
 footer {
   text-align: center;
@@ -172,17 +209,18 @@ footer {
 }
 
 /* ANIMATION */
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeInUp 1s ease forwards;
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
-@keyframes fadeInUp {
-  to { opacity: 1; transform: translateY(0); }
+.fade-in {
+  animation: fadeUp 1s ease forwards;
+  opacity: 0;
 }
 
 /* RESPONSIVE */
 @media (max-width: 640px) {
   nav { display: none; }
+  .hero-flex { flex-direction: column; text-align: center; }
   .narrow { text-align: left; }
 }
