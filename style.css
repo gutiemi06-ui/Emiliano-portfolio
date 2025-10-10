@@ -186,3 +186,20 @@ footer {
   nav { display: none; }
   .narrow { text-align: left; }
 }
+/* MINIMAL PROFILE PHOTO */
+.profile-pic {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 18px;
+  border: 2px solid rgba(255,255,255,0.08);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  transition: transform 0.25s ease, opacity 0.3s ease;
+  opacity: 0.95;
+}
+
+.profile-pic:hover {
+  transform: scale(1.04);
+  opacity: 1;
+}
