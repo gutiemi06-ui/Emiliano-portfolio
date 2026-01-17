@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Emiliano Gutierrez • Software Engineer & Innovator</title>
   <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -23,19 +23,26 @@
 </header>
 
 <section class="hero">
+  <div class="hero-bg-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
   <div class="container hero-content">
     <div class="hero-flex">
       <div class="hero-text">
+        <div class="hero-badge">Software Engineer • Product Leader • Problem Solver</div>
         <h2 class="headline">Building purposeful technology with precision and curiosity.</h2>
         <p class="subhead">
-          I'm a Computer Science student at <strong>Stevens Institute of Technology</strong> focused on engineering elegant solutions,
+          Computer Science student at <strong>Stevens Institute of Technology</strong> focused on engineering elegant solutions,
           systems-level thinking, and delivering products that solve real problems.
         </p>
         <div class="cta">
           <a class="btn primary" href="assets/Emiliano_Gutierrez_Resume.pdf" target="_blank">
+            <span class="btn-icon">📄</span>
             Download Résumé
           </a>
-          <a href="#contact" class="btn secondary">Contact</a>
+          <a href="#contact" class="btn secondary">Let's Connect</a>
         </div>
       </div>
     </div>
@@ -45,7 +52,7 @@
 <section id="about" class="section fade-in">
   <div class="container narrow">
     <h2>About Me</h2>
-    <p>
+    <p class="lead">
       I approach engineering with an entrepreneurial mindset—balancing technical precision with creativity and impact.
       Whether I'm designing CPU architectures, building full-stack systems, or leading development sprints,
       I prioritize clarity, scalability, and user experience.
@@ -56,16 +63,60 @@
   </div>
 </section>
 
-<section id="philosophy" class="section fade-in">
+<section id="vision" class="section alt fade-in">
   <div class="container narrow">
+    <div class="vision-card">
+      <div class="vision-icon">🎯</div>
+      <h2>My Vision: Bridging Leadership & Technology</h2>
+      <p class="vision-intro">
+        From my earliest experiences leading teams and optimizing operations, I discovered something powerful: 
+        <strong>the best solutions come from understanding both people and systems</strong>.
+      </p>
+      <div class="vision-content">
+        <p>
+          My journey began in operations, where I learned to <strong>translate ambiguity into action</strong>—optimizing workflows, 
+          mentoring teams, and driving measurable results. Those leadership experiences taught me that great execution 
+          requires empathy, communication, and strategic thinking.
+        </p>
+        <p>
+          Now, as I deepen my technical expertise in computer science, I'm building the engineering foundation to complement 
+          that leadership background. From architecting CPUs to building full-stack applications, I'm not just learning to code—
+          <strong>I'm learning to lead through code</strong>.
+        </p>
+        <p class="vision-goal">
+          <strong>My goal:</strong> To become a <strong>Technical Project Manager</strong> who bridges the gap between 
+          engineering teams and business objectives. Someone who can speak fluently to both developers and stakeholders, 
+          who understands the technical constraints while keeping the human impact at the center of every decision.
+        </p>
+        <p>
+          I believe the future belongs to leaders who can do both: build systems <em>and</em> build teams. 
+          That's the bridge I'm creating—one sprint, one project, one line of code at a time.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="philosophy" class="section fade-in">
+  <div class="container">
     <h2>My Philosophy</h2>
-    <p>
-      I believe great engineering starts with empathy — understanding people and their needs before writing a single line of code.
-      My process blends creativity and precision: I design for clarity, build for scalability, and iterate for impact.
-    </p>
-    <p>
-      Whether I'm debugging a system or leading a sprint, I approach every challenge with curiosity, focus, and intention.
-    </p>
+    <div class="philosophy-grid">
+      <div class="philosophy-card">
+        <div class="philosophy-icon">💡</div>
+        <h3>Empathy-Driven Engineering</h3>
+        <p>Great engineering starts with understanding people and their needs before writing a single line of code.</p>
+      </div>
+      <div class="philosophy-card">
+        <div class="philosophy-icon">🔄</div>
+        <h3>Iterative Excellence</h3>
+        <p>I design for clarity, build for scalability, and iterate for impact—always learning, always improving.</p>
+      </div>
+      <div class="philosophy-card">
+        <div class="philosophy-icon">🎨</div>
+        <h3>Creativity Meets Precision</h3>
+        <p>Whether debugging systems or leading sprints, I balance creative problem-solving with technical rigor.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -74,7 +125,8 @@
     <h2>Selected Projects</h2>
     <div class="grid">
 
-      <div class="card">
+      <div class="card featured">
+        <div class="card-badge">Featured</div>
         <h3>F1 Podium Predictor & Championship Simulator</h3>
         <p class="meta">React, JavaScript, REST APIs, Recharts</p>
         <p>
@@ -82,9 +134,14 @@
           Integrated Ergast F1 API with asynchronous data fetching for autonomous synchronization of live race results across the 24-race calendar.
           Built interactive dashboard with 4 visualization panels and CSV import functionality.
         </p>
-        <div class="cta" style="margin-top: 12px;">
-          <a href="https://github.com/gutiemi06-ui/f1-predictor" target="_blank" class="btn secondary" style="font-size: 0.9rem; padding: 8px 16px;">View Code</a>
-          <a href="https://github.com/gutiemi06-ui/f1-predictor#readme" target="_blank" class="btn secondary" style="font-size: 0.9rem; padding: 8px 16px;">Learn More</a>
+        <div class="project-stats">
+          <span class="stat">🔄 10K Simulations</span>
+          <span class="stat">📊 4 Viz Panels</span>
+          <span class="stat">🏎️ 24 Race Calendar</span>
+        </div>
+        <div class="cta" style="margin-top: 16px;">
+          <a href="https://github.com/gutiemi06-ui/f1-predictor" target="_blank" class="btn secondary small">View Code</a>
+          <a href="https://github.com/gutiemi06-ui/f1-predictor#readme" target="_blank" class="btn secondary small">Learn More</a>
         </div>
       </div>
 
@@ -95,6 +152,10 @@
           Leading development of a full-stack platform connecting Stevens students with paid internships from Hoboken and NYC businesses.
           Building authentication, dashboards, and posting workflows for 3,000+ users across a six-person agile team.
         </p>
+        <div class="project-stats">
+          <span class="stat">👥 3K+ Users</span>
+          <span class="stat">🚀 6-Person Team</span>
+        </div>
       </div>
 
       <div class="card">
@@ -105,6 +166,10 @@
           Built a Python-based assembler translating custom assembly into executable machine code and validated execution
           through demo programs and memory operations.
         </p>
+        <div class="project-stats">
+          <span class="stat">⚙️ Custom ISA</span>
+          <span class="stat">🔧 Python Assembler</span>
+        </div>
       </div>
 
       <div class="card">
@@ -113,6 +178,10 @@
         <p>
           Designed automated ETL pipeline reducing preprocessing time by 40% and enabling reproducible, scalable insights.
         </p>
+        <div class="project-stats">
+          <span class="stat">⚡ 40% Faster</span>
+          <span class="stat">📈 Scalable</span>
+        </div>
       </div>
 
     </div>
@@ -127,7 +196,10 @@
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
-          <h3>Product / Project Manager</h3>
+          <div class="experience-header">
+            <h3>Product / Project Manager</h3>
+            <span class="timeline-badge">Leadership</span>
+          </div>
           <p class="meta">Stevens Software Engineering Club • Aug 2024 – Present</p>
           <p class="highlight">
             Led a six-member agile team developing a full-stack solution from concept to MVP.
@@ -135,6 +207,7 @@
           <ul>
             <li>Defined product roadmap and sprint cycles, increasing engagement by 25%.</li>
             <li>Implemented GitHub automation and retrospectives, improving efficiency by 30%.</li>
+            <li>Facilitated stakeholder communication and technical decision-making across the development lifecycle.</li>
           </ul>
         </div>
       </div>
@@ -142,7 +215,10 @@
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
-          <h3>Operations Associate</h3>
+          <div class="experience-header">
+            <h3>Operations Associate</h3>
+            <span class="timeline-badge">Operations</span>
+          </div>
           <p class="meta">The Wash Tub • Mar–Aug 2024; May–Aug 2025</p>
           <ul>
             <li>Optimized workflows, increasing throughput by 15%.</li>
@@ -157,33 +233,90 @@
 </section>
 
 <section id="skills" class="section alt fade-in">
-  <div class="container narrow">
+  <div class="container">
     <h2>Technical Skills</h2>
-    <p><strong>Languages:</strong> Python, Java, C++, C, JavaScript/TypeScript, SQL, Assembly</p>
-    <p><strong>Frameworks & Tools:</strong> React, Next.js, Node.js, MongoDB, Git/GitHub, Docker, Pandas, NumPy, Scikit-learn</p>
-    <p><strong>Core Strengths:</strong> Data Structures & Algorithms, Computer Architecture, Systems Design, API Development, Full-Stack Development</p>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3>💻 Languages</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">C</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">Assembly</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>🛠️ Frameworks & Tools</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Next.js</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">Git/GitHub</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Pandas</span>
+          <span class="skill-tag">NumPy</span>
+          <span class="skill-tag">Scikit-learn</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3>🎯 Core Strengths</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Data Structures & Algorithms</span>
+          <span class="skill-tag">Computer Architecture</span>
+          <span class="skill-tag">Systems Design</span>
+          <span class="skill-tag">API Development</span>
+          <span class="skill-tag">Full-Stack Development</span>
+          <span class="skill-tag">Agile Project Management</span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <section id="life" class="section fade-in">
   <div class="container narrow">
     <h2>Outside of Code</h2>
-    <p>
-      When I'm not coding, I'm at the gym, exploring Hoboken, or shooting photography.
-      I'm passionate about creativity, design, and connecting innovation with everyday life.
+    <div class="life-grid">
+      <div class="life-item">
+        <div class="life-icon">💪</div>
+        <p>Gym & Fitness</p>
+      </div>
+      <div class="life-item">
+        <div class="life-icon">🌆</div>
+        <p>Exploring Hoboken</p>
+      </div>
+      <div class="life-item">
+        <div class="life-icon">📸</div>
+        <p>Photography</p>
+      </div>
+      <div class="life-item">
+        <div class="life-icon">🎨</div>
+        <p>Design & Creativity</p>
+      </div>
+    </div>
+    <p style="margin-top: 24px;">
+      I'm passionate about connecting innovation with everyday life and finding inspiration everywhere.
     </p>
   </div>
 </section>
 
-<section id="contact" class="section fade-in">
+<section id="contact" class="section alt fade-in">
   <div class="container narrow">
     <h2>Let's Connect</h2>
-    <p>
+    <p class="lead">
       I'm open to internships, software engineering roles, and meaningful collaborations.
       If you'd like to build something impactful — let's talk.
     </p>
     <div class="cta">
-      <a href="mailto:egutierr1@stevens.edu" class="btn primary">Email Me</a>
+      <a href="mailto:egutierr1@stevens.edu" class="btn primary">
+        <span class="btn-icon">✉️</span>
+        Email Me
+      </a>
       <a href="https://www.linkedin.com/in/emiliano-gutierrez-46903b228" target="_blank" class="btn secondary">LinkedIn</a>
       <a href="https://github.com/gutiemi06-ui" target="_blank" class="btn secondary">GitHub</a>
     </div>
@@ -196,6 +329,22 @@
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
+  
+  // Intersection Observer for fade-in animations
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, observerOptions);
+  
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 </script>
 
 </body>
