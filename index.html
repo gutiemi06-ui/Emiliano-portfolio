@@ -3,348 +3,440 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Emiliano Gutierrez • Software Engineer & Innovator</title>
+  <title>Emiliano Gutierrez — Software Engineer</title>
   <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header class="nav">
-  <div class="container nav-inner">
-    <h1 class="logo">Emiliano Gutierrez</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+<!-- Custom Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
 
+<!-- ── NAV ──────────────────────────────────── -->
+<nav>
+  <a href="#" class="nav-logo">Emiliano Gutierrez</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ── HERO ─────────────────────────────────── -->
 <section class="hero">
-  <div class="hero-bg-shapes">
-    <div class="shape shape-1"></div>
-    <div class="shape shape-2"></div>
-    <div class="shape shape-3"></div>
-  </div>
-  <div class="container hero-content">
-    <div class="hero-flex">
-      <div class="hero-text">
-        <div class="hero-badge">Software Engineer • Product Leader • Problem Solver</div>
-        <h2 class="headline">Building purposeful technology with precision and curiosity.</h2>
-        <p class="subhead">
-          Computer Science student at <strong>Stevens Institute of Technology</strong> focused on engineering elegant solutions,
-          systems-level thinking, and delivering products that solve real problems.
-        </p>
-        <div class="cta">
-          <a class="btn primary" href="assets/Emiliano_Gutierrez_Resume.pdf" target="_blank">
-            <span class="btn-icon">📄</span>
-            Download Résumé
-          </a>
-          <a href="#contact" class="btn secondary">Let's Connect</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="about" class="section fade-in">
-  <div class="container narrow">
-    <h2>About Me</h2>
-    <p class="lead">
-      I approach engineering with an entrepreneurial mindset—balancing technical precision with creativity and impact.
-      Whether I'm designing CPU architectures, building full-stack systems, or leading development sprints,
-      I prioritize clarity, scalability, and user experience.
+  <div class="hero-left">
+    <div class="hero-number">001 — Software Engineer & Technical PM</div>
+    <h1 class="hero-name">
+      Emiliano<br>
+      <em>Gutierrez.</em>
+    </h1>
+    <p class="hero-desc">
+      CS student at Stevens Institute of Technology. I build full-stack systems,
+      architect multi-agent AI platforms, and lead engineering teams from concept to deployment.
     </p>
-    <p>
-      Fluent in English and Spanish, I bring both global perspective and local initiative to every project.
-    </p>
-  </div>
-</section>
-
-<section id="vision" class="section alt fade-in">
-  <div class="container narrow">
-    <div class="vision-card">
-      <div class="vision-icon">🎯</div>
-      <h2>My Vision: Bridging Leadership & Technology</h2>
-      <p class="vision-intro">
-        From my earliest experiences leading teams and optimizing operations, I discovered something powerful: 
-        <strong>the best solutions come from understanding both people and systems</strong>.
-      </p>
-      <div class="vision-content">
-        <p>
-          My journey began in operations, where I learned to <strong>translate ambiguity into action</strong>—optimizing workflows, 
-          mentoring teams, and driving measurable results. Those leadership experiences taught me that great execution 
-          requires empathy, communication, and strategic thinking.
-        </p>
-        <p>
-          Now, as I deepen my technical expertise in computer science, I'm building the engineering foundation to complement 
-          that leadership background. From architecting CPUs to building full-stack applications, I'm not just learning to code—
-          <strong>I'm learning to lead through code</strong>.
-        </p>
-        <p class="vision-goal">
-          <strong>My goal:</strong> To become a <strong>Technical Project Manager</strong> who bridges the gap between 
-          engineering teams and business objectives. Someone who can speak fluently to both developers and stakeholders, 
-          who understands the technical constraints while keeping the human impact at the center of every decision.
-        </p>
-        <p>
-          I believe the future belongs to leaders who can do both: build systems <em>and</em> build teams. 
-          That's the bridge I'm creating—one sprint, one project, one line of code at a time.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="philosophy" class="section fade-in">
-  <div class="container">
-    <h2>My Philosophy</h2>
-    <div class="philosophy-grid">
-      <div class="philosophy-card">
-        <div class="philosophy-icon">💡</div>
-        <h3>Empathy-Driven Engineering</h3>
-        <p>Great engineering starts with understanding people and their needs before writing a single line of code.</p>
-      </div>
-      <div class="philosophy-card">
-        <div class="philosophy-icon">🔄</div>
-        <h3>Iterative Excellence</h3>
-        <p>I design for clarity, build for scalability, and iterate for impact—always learning, always improving.</p>
-      </div>
-      <div class="philosophy-card">
-        <div class="philosophy-icon">🎨</div>
-        <h3>Creativity Meets Precision</h3>
-        <p>Whether debugging systems or leading sprints, I balance creative problem-solving with technical rigor.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="projects" class="section alt fade-in">
-  <div class="container">
-    <h2>Selected Projects</h2>
-    <div class="grid">
-
-      <div class="card featured">
-        <div class="card-badge">Featured</div>
-        <h3>F1 Podium Predictor & Championship Simulator</h3>
-        <p class="meta">React, JavaScript, REST APIs, Recharts</p>
-        <p>
-          Engineered Monte Carlo simulation algorithm executing 10,000 iterations to forecast Formula 1 race outcomes with dynamic weighted scoring.
-          Integrated Ergast F1 API with asynchronous data fetching for autonomous synchronization of live race results across the 24-race calendar.
-          Built interactive dashboard with 4 visualization panels and CSV import functionality.
-        </p>
-        <div class="project-stats">
-          <span class="stat">🔄 10K Simulations</span>
-          <span class="stat">📊 4 Viz Panels</span>
-          <span class="stat">🏎️ 24 Race Calendar</span>
-        </div>
-        <div class="cta" style="margin-top: 16px;">
-          <a href="https://github.com/gutiemi06-ui/f1-predictor" target="_blank" class="btn secondary small">View Code</a>
-          <a href="https://github.com/gutiemi06-ui/f1-predictor#readme" target="_blank" class="btn secondary small">Learn More</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>Waddle – Job Portal MVP</h3>
-        <p class="meta">Next.js, Node.js, MongoDB, Jira</p>
-        <p>
-          Leading development of a full-stack platform connecting Stevens students with paid internships from Hoboken and NYC businesses.
-          Building authentication, dashboards, and posting workflows for 3,000+ users across a six-person agile team.
-        </p>
-        <div class="project-stats">
-          <span class="stat">👥 3K+ Users</span>
-          <span class="stat">🚀 6-Person Team</span>
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>Silverback CPU – Custom Single-Cycle Processor</h3>
-        <p class="meta">Logisim-Evolution, Python, Assembly</p>
-        <p>
-          Designed and implemented a custom single-cycle CPU with a bespoke 8-bit instruction set architecture (ISA).
-          Built a Python-based assembler translating custom assembly into executable machine code and validated execution
-          through demo programs and memory operations.
-        </p>
-        <div class="project-stats">
-          <span class="stat">⚙️ Custom ISA</span>
-          <span class="stat">🔧 Python Assembler</span>
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>Data Analysis Pipeline</h3>
-        <p class="meta">Python, Pandas</p>
-        <p>
-          Designed automated ETL pipeline reducing preprocessing time by 40% and enabling reproducible, scalable insights.
-        </p>
-        <div class="project-stats">
-          <span class="stat">⚡ 40% Faster</span>
-          <span class="stat">📈 Scalable</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section id="experience" class="section fade-in">
-  <div class="container">
-    <h2>Leadership & Experience</h2>
-    <div class="timeline">
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="experience-header">
-            <h3>Product / Project Manager</h3>
-            <span class="timeline-badge">Leadership</span>
-          </div>
-          <p class="meta">Stevens Software Engineering Club • Aug 2024 – Present</p>
-          <p class="highlight">
-            Led a six-member agile team developing a full-stack solution from concept to MVP.
-          </p>
-          <ul>
-            <li>Defined product roadmap and sprint cycles, increasing engagement by 25%.</li>
-            <li>Implemented GitHub automation and retrospectives, improving efficiency by 30%.</li>
-            <li>Facilitated stakeholder communication and technical decision-making across the development lifecycle.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="experience-header">
-            <h3>Operations Associate</h3>
-            <span class="timeline-badge">Operations</span>
-          </div>
-          <p class="meta">The Wash Tub • Mar–Aug 2024; May–Aug 2025</p>
-          <ul>
-            <li>Optimized workflows, increasing throughput by 15%.</li>
-            <li>Mentored 10+ employees on standardized processes.</li>
-            <li>Built reporting systems reducing discrepancies by 20%.</li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section id="skills" class="section alt fade-in">
-  <div class="container">
-    <h2>Technical Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-category">
-        <h3>💻 Languages</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">Java</span>
-          <span class="skill-tag">C++</span>
-          <span class="skill-tag">C</span>
-          <span class="skill-tag">JavaScript</span>
-          <span class="skill-tag">TypeScript</span>
-          <span class="skill-tag">SQL</span>
-          <span class="skill-tag">Assembly</span>
-        </div>
-      </div>
-      <div class="skill-category">
-        <h3>🛠️ Frameworks & Tools</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">React</span>
-          <span class="skill-tag">Next.js</span>
-          <span class="skill-tag">Node.js</span>
-          <span class="skill-tag">MongoDB</span>
-          <span class="skill-tag">Git/GitHub</span>
-          <span class="skill-tag">Docker</span>
-          <span class="skill-tag">Pandas</span>
-          <span class="skill-tag">NumPy</span>
-          <span class="skill-tag">Scikit-learn</span>
-        </div>
-      </div>
-      <div class="skill-category">
-        <h3>🎯 Core Strengths</h3>
-        <div class="skill-tags">
-          <span class="skill-tag">Data Structures & Algorithms</span>
-          <span class="skill-tag">Computer Architecture</span>
-          <span class="skill-tag">Systems Design</span>
-          <span class="skill-tag">API Development</span>
-          <span class="skill-tag">Full-Stack Development</span>
-          <span class="skill-tag">Agile Project Management</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="life" class="section fade-in">
-  <div class="container narrow">
-    <h2>Outside of Code</h2>
-    <div class="life-grid">
-      <div class="life-item">
-        <div class="life-icon">💪</div>
-        <p>Gym & Fitness</p>
-      </div>
-      <div class="life-item">
-        <div class="life-icon">🌆</div>
-        <p>Exploring Hoboken</p>
-      </div>
-      <div class="life-item">
-        <div class="life-icon">📸</div>
-        <p>Photography</p>
-      </div>
-      <div class="life-item">
-        <div class="life-icon">🎨</div>
-        <p>Design & Creativity</p>
-      </div>
-    </div>
-    <p style="margin-top: 24px;">
-      I'm passionate about connecting innovation with everyday life and finding inspiration everywhere.
-    </p>
-  </div>
-</section>
-
-<section id="contact" class="section alt fade-in">
-  <div class="container narrow">
-    <h2>Let's Connect</h2>
-    <p class="lead">
-      I'm open to internships, software engineering roles, and meaningful collaborations.
-      If you'd like to build something impactful — let's talk.
-    </p>
-    <div class="cta">
-      <a href="mailto:egutierr1@stevens.edu" class="btn primary">
-        <span class="btn-icon">✉️</span>
-        Email Me
+    <div class="hero-cta">
+      <a href="assets/Emiliano_Gutierrez_Resume.pdf" target="_blank" class="btn-gold">
+        ↓ Download Résumé
       </a>
-      <a href="https://www.linkedin.com/in/emiliano-gutierrez-46903b228" target="_blank" class="btn secondary">LinkedIn</a>
-      <a href="https://github.com/gutiemi06-ui" target="_blank" class="btn secondary">GitHub</a>
+      <a href="#contact" class="btn-ghost">
+        Let's Talk →
+      </a>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      Scroll
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-tags reveal-stagger">
+      <div class="hero-tag">
+        <div class="hero-tag-icon">🎓</div>
+        <div class="hero-tag-text">
+          <span class="hero-tag-label">University</span>
+          <span class="hero-tag-value">Stevens Institute of Technology</span>
+        </div>
+      </div>
+      <div class="hero-tag">
+        <div class="hero-tag-icon">📍</div>
+        <div class="hero-tag-text">
+          <span class="hero-tag-label">Location</span>
+          <span class="hero-tag-value">Hoboken, NJ</span>
+        </div>
+      </div>
+      <div class="hero-tag">
+        <div class="hero-tag-icon">🔭</div>
+        <div class="hero-tag-text">
+          <span class="hero-tag-label">Focus</span>
+          <span class="hero-tag-value">Fintech & AI Infrastructure</span>
+        </div>
+      </div>
+      <div class="hero-tag">
+        <div class="hero-tag-icon">🚀</div>
+        <div class="hero-tag-text">
+          <span class="hero-tag-label">Role</span>
+          <span class="hero-tag-value">Technical PM — Software Eng. Club</span>
+        </div>
+      </div>
+      <div class="hero-tag">
+        <div class="hero-tag-icon">⚙️</div>
+        <div class="hero-tag-text">
+          <span class="hero-tag-label">Status</span>
+          <span class="hero-tag-value">Open to Fall '26, Spring '27 & Summer '27</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- ── ABOUT ─────────────────────────────────── -->
+<section id="about">
+  <div class="section-header reveal">
+    <span class="section-num">002</span>
+    <h2 class="section-title">About <em>Me</em></h2>
+  </div>
+  <div class="about-grid">
+    <div class="reveal">
+      <p class="about-statement">
+        I don't just write code —<br>
+        I <em>lead</em> the people<br>
+        who build with it.
+      </p>
+      <p class="about-body">
+        First-generation CS student who came up through operations before discovering
+        software. That crossover gives me something most engineers don't have: I can
+        talk to a VP and a junior dev in the same breath and actually translate between them.
+      </p>
+      <p class="about-body">
+        Whether I'm designing system architecture for an autonomous vehicle platform,
+        building a card-issuing fintech tool, or running sprints for a six-person
+        agile team — I bring the same obsession with clarity, speed, and craft.
+      </p>
+      <p class="about-body">
+        Fluent in English and Spanish. Intermediate skier. Beginner golfer. Lifelong builder.
+      </p>
+    </div>
+    <div class="about-facts reveal">
+      <div class="about-fact">
+        <span class="fact-label">Degree</span>
+        <span class="fact-value">B.S. Computer Science, 2027</span>
+      </div>
+      <div class="about-fact">
+        <span class="fact-label">Languages</span>
+        <span class="fact-value">English, Spanish</span>
+      </div>
+      <div class="about-fact">
+        <span class="fact-label">Interests</span>
+        <span class="fact-value">Fintech · AI Infra · Systems</span>
+      </div>
+      <div class="about-fact">
+        <span class="fact-label">Currently</span>
+        <span class="fact-value">Fall '26 · Spring '27 · Summer '27</span>
+      </div>
+      <div class="about-fact">
+        <span class="fact-label">GitHub</span>
+        <span class="fact-value">gutiemi06-ui</span>
+      </div>
+      <div class="about-fact">
+        <span class="fact-label">Based in</span>
+        <span class="fact-value">Hoboken, NJ → San Antonio, TX</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROJECTS ───────────────────────────────── -->
+<section id="projects">
+  <div class="section-header reveal">
+    <span class="section-num">003</span>
+    <h2 class="section-title">Selected <em>Projects</em></h2>
+  </div>
+  <div class="projects-list">
+
+    <!-- Featured -->
+    <a href="https://github.com/gutiemi06-ui/customer-service-ai-platform" target="_blank" class="project-item featured reveal">
+      <span class="project-num">★</span>
+      <div class="project-main">
+        <div class="project-tags">
+          <span class="project-tag">Featured</span>
+          <span class="project-tag">Next.js 14</span>
+          <span class="project-tag">TypeScript</span>
+          <span class="project-tag">PostgreSQL</span>
+          <span class="project-tag">AI</span>
+        </div>
+        <h3 class="project-name">Customer Service AI Platform</h3>
+        <p class="project-desc">
+          Full-stack enterprise platform built with Next.js 14, TypeScript, and PostgreSQL/Prisma.
+          Integrates an AI chatbot with live sentiment analysis, an analytics dashboard, and
+          NextAuth authentication. Deployed as a production-grade system targeting fintech customer ops —
+          built to demo the kind of infrastructure Lithic and similar companies rely on.
+        </p>
+        <div class="project-stats">
+          <span class="p-stat">Full-Stack · Next.js 14</span>
+          <span class="p-stat">AI Chatbot + Sentiment</span>
+          <span class="p-stat">Auth + Analytics Dashboard</span>
+        </div>
+      </div>
+      <div class="project-arrow">↗</div>
+    </a>
+
+    <a href="https://github.com/gutiemi06-ui/f1-predictor" target="_blank" class="project-item reveal">
+      <span class="project-num">01</span>
+      <div class="project-main">
+        <div class="project-tags">
+          <span class="project-tag">React</span>
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">REST API</span>
+          <span class="project-tag">Recharts</span>
+        </div>
+        <h3 class="project-name">F1 Podium Predictor & Championship Simulator</h3>
+        <p class="project-desc">
+          Monte Carlo simulation engine running 10,000 iterations to forecast Formula 1 outcomes.
+          Integrates Ergast F1 API with async fetching for live race data across the 24-race calendar.
+          Interactive dashboard with 4 visualization panels and CSV import/export.
+        </p>
+        <div class="project-stats">
+          <span class="p-stat">10K Monte Carlo Iterations</span>
+          <span class="p-stat">24-Race Calendar</span>
+          <span class="p-stat">4 Viz Panels</span>
+        </div>
+      </div>
+      <div class="project-arrow">↗</div>
+    </a>
+
+    <div class="project-item reveal">
+      <span class="project-num">02</span>
+      <div class="project-main">
+        <div class="project-tags">
+          <span class="project-tag">Next.js</span>
+          <span class="project-tag">Node.js</span>
+          <span class="project-tag">MongoDB</span>
+          <span class="project-tag">Agile</span>
+        </div>
+        <h3 class="project-name">Waddle — Stevens Student Job Portal</h3>
+        <p class="project-desc">
+          Leading a six-person agile team building a full-stack platform connecting Stevens students
+          with paid internships from Hoboken and NYC businesses. Built auth, dashboards, and posting
+          workflows targeting 3,000+ users. Managed sprint cycles, GitHub automation, and stakeholder comms.
+        </p>
+        <div class="project-stats">
+          <span class="p-stat">3,000+ Target Users</span>
+          <span class="p-stat">6-Person Agile Team</span>
+          <span class="p-stat">Technical PM Role</span>
+        </div>
+      </div>
+      <div class="project-arrow">↗</div>
+    </div>
+
+    <div class="project-item reveal">
+      <span class="project-num">03</span>
+      <div class="project-main">
+        <div class="project-tags">
+          <span class="project-tag">Systems</span>
+          <span class="project-tag">C</span>
+          <span class="project-tag">Unix</span>
+          <span class="project-tag">OS-Level</span>
+        </div>
+        <h3 class="project-name">Minishell & Systems Programming Suite</h3>
+        <p class="project-desc">
+          Built a fully functional Unix shell (minish.c) from scratch with pipe chaining, fork/exec,
+          and signal handling. Also built pfind.c, a recursive file-finder, and a pipe/fork program
+          passing 9/10 automated tester cases. Demonstrates deep understanding of OS fundamentals.
+        </p>
+        <div class="project-stats">
+          <span class="p-stat">Unix Shell · C</span>
+          <span class="p-stat">Pipe/Fork/Exec</span>
+          <span class="p-stat">Signal Handling</span>
+        </div>
+      </div>
+      <div class="project-arrow">↗</div>
+    </div>
+
+    <div class="project-item reveal">
+      <span class="project-num">04</span>
+      <div class="project-main">
+        <div class="project-tags">
+          <span class="project-tag">Hardware</span>
+          <span class="project-tag">Logisim</span>
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Assembly</span>
+        </div>
+        <h3 class="project-name">Silverback CPU — Custom Single-Cycle Processor</h3>
+        <p class="project-desc">
+          Designed a custom 8-bit ISA and implemented a full single-cycle CPU in Logisim-Evolution.
+          Built a Python-based assembler translating custom assembly into executable machine code.
+          Validated with demo programs and full memory operations.
+        </p>
+        <div class="project-stats">
+          <span class="p-stat">Custom 8-bit ISA</span>
+          <span class="p-stat">Python Assembler</span>
+          <span class="p-stat">Full CPU Pipeline</span>
+        </div>
+      </div>
+      <div class="project-arrow">↗</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── EXPERIENCE ─────────────────────────────── -->
+<section id="experience">
+  <div class="section-header reveal">
+    <span class="section-num">004</span>
+    <h2 class="section-title">Leadership & <em>Experience</em></h2>
+  </div>
+  <div class="experience-list">
+
+    <div class="exp-item reveal">
+      <div class="exp-meta">
+        <div class="exp-period">Aug 2024 — Present</div>
+        <div class="exp-org">Stevens Software Engineering Club</div>
+        <div class="exp-badge">Leadership</div>
+      </div>
+      <div class="exp-body">
+        <h3 class="exp-role">Technical Project Manager</h3>
+        <div class="exp-highlight">
+          Led a six-member agile team delivering a full-stack platform from concept to MVP, managing roadmap, sprints, and stakeholder communication end-to-end.
+        </div>
+        <ul class="exp-bullets">
+          <li>Defined product roadmap and sprint cycles, increasing team engagement by 25%</li>
+          <li>Implemented GitHub automation and retrospective processes, improving delivery efficiency by 30%</li>
+          <li>Facilitated technical decision-making and stakeholder alignment across the full development lifecycle</li>
+          <li>Owned system architecture design for Alset, an autonomous vehicle management system</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item reveal">
+      <div class="exp-meta">
+        <div class="exp-period">Mar–Aug 2024<br>May–Aug 2025</div>
+        <div class="exp-org">The Wash Tub</div>
+        <div class="exp-badge">Operations</div>
+      </div>
+      <div class="exp-body">
+        <h3 class="exp-role">Operations Associate</h3>
+        <div class="exp-highlight">
+          Optimized operational workflows and built internal reporting systems that reduced discrepancies and improved team throughput.
+        </div>
+        <ul class="exp-bullets">
+          <li>Optimized workflows and standardized processes, increasing throughput by 15%</li>
+          <li>Mentored 10+ employees on operational best practices</li>
+          <li>Built reporting systems reducing reconciliation discrepancies by 20%</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── SKILLS ─────────────────────────────────── -->
+<section id="skills">
+  <div class="section-header reveal">
+    <span class="section-num">005</span>
+    <h2 class="section-title">Technical <em>Skills</em></h2>
+  </div>
+  <div class="skills-container reveal-stagger">
+
+    <div class="skill-col">
+      <div class="skill-col-title">Languages</div>
+      <div class="skill-list">
+        <div class="skill-entry">Python <span class="skill-dot active"></span></div>
+        <div class="skill-entry">JavaScript / TypeScript <span class="skill-dot active"></span></div>
+        <div class="skill-entry">C / C++ <span class="skill-dot active"></span></div>
+        <div class="skill-entry">Java <span class="skill-dot active"></span></div>
+        <div class="skill-entry">SQL <span class="skill-dot active"></span></div>
+        <div class="skill-entry">OCaml <span class="skill-dot"></span></div>
+        <div class="skill-entry">Assembly <span class="skill-dot"></span></div>
+        <div class="skill-entry">Bash / Shell <span class="skill-dot"></span></div>
+      </div>
+    </div>
+
+    <div class="skill-col">
+      <div class="skill-col-title">Frameworks & Tools</div>
+      <div class="skill-list">
+        <div class="skill-entry">Next.js / React <span class="skill-dot active"></span></div>
+        <div class="skill-entry">Node.js <span class="skill-dot active"></span></div>
+        <div class="skill-entry">PostgreSQL / Prisma <span class="skill-dot active"></span></div>
+        <div class="skill-entry">MongoDB <span class="skill-dot active"></span></div>
+        <div class="skill-entry">Git / GitHub <span class="skill-dot active"></span></div>
+        <div class="skill-entry">Docker <span class="skill-dot"></span></div>
+        <div class="skill-entry">Pandas / NumPy <span class="skill-dot"></span></div>
+        <div class="skill-entry">Scikit-learn <span class="skill-dot"></span></div>
+      </div>
+    </div>
+
+    <div class="skill-col">
+      <div class="skill-col-title">Core Strengths</div>
+      <div class="skill-list">
+        <div class="skill-entry">System Architecture <span class="skill-dot active"></span></div>
+        <div class="skill-entry">Agile / Sprint PM <span class="skill-dot active"></span></div>
+        <div class="skill-entry">Full-Stack Development <span class="skill-dot active"></span></div>
+        <div class="skill-entry">API Design <span class="skill-dot active"></span></div>
+        <div class="skill-entry">OS & Systems Programming <span class="skill-dot active"></span></div>
+        <div class="skill-entry">Data Structures & Algorithms <span class="skill-dot"></span></div>
+        <div class="skill-entry">Computer Architecture <span class="skill-dot"></span></div>
+        <div class="skill-entry">Technical Communication <span class="skill-dot"></span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── CONTACT ────────────────────────────────── -->
+<section id="contact">
+  <div class="contact-pre">006 — Get In Touch</div>
+  <h2 class="contact-heading reveal">
+    Let's build<br>
+    something <em>real.</em>
+  </h2>
+  <div class="contact-links reveal">
+    <a href="mailto:egutierr1@stevens.edu" class="contact-link primary">✉ Email Me</a>
+    <a href="https://www.linkedin.com/in/emiliano-gutierrez-46903b228" target="_blank" class="contact-link secondary">↗ LinkedIn</a>
+    <a href="https://github.com/gutiemi06-ui" target="_blank" class="contact-link secondary">↗ GitHub</a>
+    <a href="assets/Emiliano_Gutierrez_Resume.pdf" target="_blank" class="contact-link secondary">↓ Résumé PDF</a>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────── -->
 <footer>
-  <p>© <span id="year"></span> Emiliano Gutierrez — Crafted in Hoboken, NJ with 💡, ☕, and code.</p>
+  <p>© <span id="year"></span> Emiliano Gutierrez — Crafted in Hoboken, NJ</p>
+  <p>CS @ Stevens Institute of Technology · Open to Fall '26, Spring '27 & Summer '27</p>
 </footer>
 
 <script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-  
-  // Intersection Observer for fade-in animations
-  const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-  };
-  
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
+  // Year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Custom cursor
+  const cursor = document.getElementById('cursor');
+  const ring = document.getElementById('cursorRing');
+  let mx = 0, my = 0, rx = 0, ry = 0;
+
+  document.addEventListener('mousemove', e => {
+    mx = e.clientX; my = e.clientY;
+    cursor.style.transform = `translate(${mx - 5}px, ${my - 5}px)`;
+  });
+
+  function animateRing() {
+    rx += (mx - rx - 18) * 0.12;
+    ry += (my - ry - 18) * 0.12;
+    ring.style.transform = `translate(${rx}px, ${ry}px)`;
+    requestAnimationFrame(animateRing);
+  }
+  animateRing();
+
+  // Scroll reveal
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) e.target.classList.add('visible');
     });
-  }, observerOptions);
-  
-  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => observer.observe(el));
 </script>
 
 </body>
