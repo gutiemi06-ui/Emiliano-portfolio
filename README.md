@@ -1,31 +1,73 @@
-# Emiliano Portfolio (Static Site)
+# Emiliano Gutierrez — Portfolio
 
-This is a simple, fast, static personal website for Emiliano Gutierrez. It can be hosted for free on GitHub Pages, Netlify, or Vercel.
+Personal portfolio website for Emiliano Gutierrez, CS student at Stevens Institute of Technology. Built as a static site — no frameworks, no build step, just HTML and CSS.
 
-## Quick Start
-1. Open `index.html` in your browser to preview locally.
-2. Edit text and links inside `index.html` to update content.
-3. Replace the PDF in `assets/Emiliano_Technical_Resume.pdf` if needed.
+**Live site:** https://gutiemi06-ui.github.io/Emiliano-portfolio/
 
-## Deploy to GitHub Pages
-1. Create a new GitHub repo (e.g., `emiliano-portfolio`).
-2. Upload the contents of this folder (all files and the `assets` directory).
-3. In the repository, go to **Settings → Pages**.
-4. Under **Build and deployment**, pick **Deploy from a branch**.
-5. Select the `main` branch and **/ (root)** folder. Save.
-6. Wait 1–2 minutes — your site will be live at `https://<your-username>.github.io/emiliano-portfolio/`.
+---
 
-## Deploy to Netlify (drag-and-drop)
-1. Go to https://app.netlify.com/ and sign in.
-2. Click **Add new site → Deploy manually**.
-3. Drag-and-drop this entire folder onto the upload area.
-4. Netlify will give you a live URL you can customize.
+## Stack
 
-## Deploy to Vercel (drag-and-drop)
-1. Go to https://vercel.com/ and sign in.
-2. Click **Add New → Project → Import**.
-3. Choose **Import Git Repository** and select your GitHub repo containing this folder.
-4. Click **Deploy**.
+- Vanilla HTML + CSS (single-file, no dependencies)
+- Google Fonts — DM Serif Display, Syne, DM Mono
+- Deployed via GitHub Pages
+
+## Features
+
+- Editorial split-screen hero with animated info cards
+- Custom cursor with lagging ring effect
+- Scroll-triggered reveal animations
+- Responsive down to mobile
+- Grain texture overlay
+- Sections: About, Projects, Experience, Skills, Contact
+
+## Structure
+
+```
+Emiliano-portfolio/
+├── index.html          # Everything — HTML + embedded CSS
+├── README.md
+└── assets/
+    └── Emiliano_Gutierrez_Resume.pdf
+```
+
+## Updating Content
+
+All content lives in `index.html`. Edit it directly on GitHub or locally:
+
+```bash
+git clone https://github.com/gutiemi06-ui/Emiliano-portfolio.git
+cd Emiliano-portfolio
+# edit index.html
+git add index.html
+git commit -m "Update content"
+git push origin main
+```
+
+GitHub Pages auto-deploys within ~2 minutes after every push.
+
+## Adding a Project
+
+Find the `<!-- ── PROJECTS ──>` section in `index.html` and copy this block:
+
+```html
+<div class="project-item reveal">
+  <span class="project-num">05</span>
+  <div class="project-main">
+    <div class="project-tags">
+      <span class="project-tag">Tag</span>
+    </div>
+    <h3 class="project-name">Project Name</h3>
+    <p class="project-desc">Description here.</p>
+    <div class="project-stats">
+      <span class="p-stat">Stat 1</span>
+    </div>
+  </div>
+  <div class="project-arrow">↗</div>
+</div>
+```
+
+Wrap it in `<a href="..." target="_blank" class="project-item reveal">` to make it a link.
 
 ---
 
