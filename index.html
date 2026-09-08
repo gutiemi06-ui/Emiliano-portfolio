@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Emiliano Gutierrez — Software Engineer</title>
+  <meta name="description" content="Emiliano Gutierrez is a Stevens computer science student building reliable full-stack, AI, and real-time data systems." />
   <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&display=swap');
 
@@ -884,14 +885,14 @@ footer p {
 <!-- ── HERO ─────────────────────────────────── -->
 <section class="hero">
   <div class="hero-left">
-    <div class="hero-number">001 — Software Engineer & Technical PM</div>
+    <div class="hero-number">001 — Software Engineer · Product-Minded Builder</div>
     <h1 class="hero-name">
       Emiliano<br>
       <em>Gutierrez.</em>
     </h1>
     <p class="hero-desc">
-      CS student at Stevens Institute of Technology. I build full-stack systems,
-      architect multi-agent AI platforms, and lead engineering teams from concept to deployment.
+      CS student at Stevens Institute of Technology building reliable full-stack, AI,
+      and real-time data systems—from market-risk infrastructure to customer-facing products.
     </p>
     <div class="hero-cta">
       <a href="assets/Emiliano_Gutierrez_Resume.pdf" target="_blank" class="btn-gold">
@@ -926,7 +927,7 @@ footer p {
         <div class="hero-tag-icon">🔭</div>
         <div class="hero-tag-text">
           <span class="hero-tag-label">Focus</span>
-          <span class="hero-tag-value">Fintech & AI Infrastructure</span>
+          <span class="hero-tag-value">Full-Stack · Fintech · Applied AI</span>
         </div>
       </div>
       <div class="hero-tag">
@@ -940,7 +941,7 @@ footer p {
         <div class="hero-tag-icon">⚙️</div>
         <div class="hero-tag-text">
           <span class="hero-tag-label">Status</span>
-          <span class="hero-tag-value">Open to Fall '26, Spring '27 & Summer '27</span>
+          <span class="hero-tag-value">Seeking Fall '26, Spring '27 & Summer '27 internships</span>
         </div>
       </div>
     </div>
@@ -956,22 +957,23 @@ footer p {
   <div class="about-grid">
     <div class="reveal">
       <p class="about-statement">
-        I don't just write code —<br>
-        I <em>lead</em> the people<br>
-        who build with it.
+        I turn ambiguous problems<br>
+        into <em>working</em> products<br>
+        people can trust.
       </p>
       <p class="about-body">
-        First-generation CS student who came up through operations before discovering
-        software. That crossover gives me something most engineers don't have: I can
-        talk to a VP and a junior dev in the same breath and actually translate between them.
+        I am a computer science student with hands-on experience spanning software,
+        operations, and customer support. That range helps me understand the user first,
+        communicate clearly, and carry a project from an unclear need to a dependable result.
       </p>
       <p class="about-body">
-        Whether I'm designing system architecture for an autonomous vehicle platform,
-        building a card-issuing fintech tool, or running sprints for a six-person
-        agile team — I bring the same obsession with clarity, speed, and craft.
+        I have built a real-time portfolio-risk terminal, an AI customer-service platform,
+        and a Monte Carlo racing simulator. I also lead a six-person student engineering
+        team, where I translate goals into roadmaps, reviews, and shipped features.
       </p>
       <p class="about-body">
-        Fluent in English and Spanish. Intermediate skier. Beginner golfer. Lifelong builder.
+        Fluent in English and Spanish. Curious by default, persistent under pressure,
+        and happiest when I am learning by building.
       </p>
     </div>
     <div class="about-facts reveal">
@@ -985,7 +987,7 @@ footer p {
       </div>
       <div class="about-fact">
         <span class="fact-label">Interests</span>
-        <span class="fact-value">Fintech · AI Infra · Systems</span>
+        <span class="fact-value">Fintech · Applied AI · Systems</span>
       </div>
       <div class="about-fact">
         <span class="fact-label">Currently</span>
@@ -1012,11 +1014,36 @@ footer p {
   <div class="projects-list">
 
     <!-- Featured -->
-    <a href="https://github.com/gutiemi06-ui/customer-service-ai-platform" target="_blank" class="project-item featured reveal">
+    <a href="https://github.com/gutiemi06-ui/hyperrisk" target="_blank" class="project-item featured reveal">
       <span class="project-num">★</span>
       <div class="project-main">
         <div class="project-tags">
           <span class="project-tag">Featured</span>
+          <span class="project-tag">Next.js</span>
+          <span class="project-tag">TypeScript</span>
+          <span class="project-tag">FastAPI</span>
+          <span class="project-tag">PostgreSQL</span>
+        </div>
+        <h3 class="project-name">HyperRisk — Real-Time Portfolio Risk Terminal</h3>
+        <p class="project-desc">
+          Read-only analytics terminal that turns Hyperliquid REST and WebSocket feeds into
+          explainable exposure, leverage, funding, liquidation-distance, stress-test, alert,
+          and replay metrics. Built with Decimal-safe calculations, validated data pipelines,
+          bounded reconnect behavior, PostgreSQL snapshots, Docker, and CI.
+        </p>
+        <div class="project-stats">
+          <span class="p-stat">REST + WebSocket Ingestion</span>
+          <span class="p-stat">Stress Tests + Replay</span>
+          <span class="p-stat">Safe Read-Only Architecture</span>
+        </div>
+      </div>
+      <div class="project-arrow">↗</div>
+    </a>
+
+    <a href="https://github.com/gutiemi06-ui/customer-service-ai-platform" target="_blank" class="project-item reveal">
+      <span class="project-num">01</span>
+      <div class="project-main">
+        <div class="project-tags">
           <span class="project-tag">Next.js 14</span>
           <span class="project-tag">TypeScript</span>
           <span class="project-tag">PostgreSQL</span>
@@ -1024,67 +1051,43 @@ footer p {
         </div>
         <h3 class="project-name">Customer Service AI Platform</h3>
         <p class="project-desc">
-          Full-stack enterprise platform built with Next.js 14, TypeScript, and PostgreSQL/Prisma.
-          Integrates an AI chatbot with live sentiment analysis, an analytics dashboard, and
-          NextAuth authentication. Deployed as a production-grade system targeting fintech customer ops —
-          built to demo the kind of infrastructure Lithic and similar companies rely on.
+          Full-stack support platform for more than 1,000 tickets, combining an AI chatbot,
+          sentiment analysis, automated escalation, role-based access, and an analytics dashboard.
+          The workflow achieved an 85% automated-resolution rate, a 2.3-hour average response
+          time, and 4.2/5 customer satisfaction in project testing.
         </p>
         <div class="project-stats">
-          <span class="p-stat">Full-Stack · Next.js 14</span>
-          <span class="p-stat">AI Chatbot + Sentiment</span>
-          <span class="p-stat">Auth + Analytics Dashboard</span>
+          <span class="p-stat">1,000+ Tickets</span>
+          <span class="p-stat">85% Resolution Rate</span>
+          <span class="p-stat">RBAC + Analytics</span>
         </div>
       </div>
       <div class="project-arrow">↗</div>
     </a>
 
     <a href="https://github.com/gutiemi06-ui/f1-predictor" target="_blank" class="project-item reveal">
-      <span class="project-num">01</span>
+      <span class="project-num">02</span>
       <div class="project-main">
         <div class="project-tags">
           <span class="project-tag">React</span>
           <span class="project-tag">JavaScript</span>
           <span class="project-tag">REST API</span>
-          <span class="project-tag">Recharts</span>
+          <span class="project-tag">Monte Carlo</span>
         </div>
         <h3 class="project-name">F1 Podium Predictor & Championship Simulator</h3>
         <p class="project-desc">
           Monte Carlo simulation engine running 10,000 iterations to forecast Formula 1 outcomes.
-          Integrates Ergast F1 API with async fetching for live race data across the 24-race calendar.
-          Interactive dashboard with 4 visualization panels and CSV import/export.
+          Uses asynchronous API handling for race data and presents the results through four
+          interactive panels for exploring podium and championship scenarios.
         </p>
         <div class="project-stats">
-          <span class="p-stat">10K Monte Carlo Iterations</span>
-          <span class="p-stat">24-Race Calendar</span>
-          <span class="p-stat">4 Viz Panels</span>
+          <span class="p-stat">10K Simulations</span>
+          <span class="p-stat">Async Data Pipeline</span>
+          <span class="p-stat">4 Interactive Panels</span>
         </div>
       </div>
       <div class="project-arrow">↗</div>
     </a>
-
-    <div class="project-item reveal">
-      <span class="project-num">02</span>
-      <div class="project-main">
-        <div class="project-tags">
-          <span class="project-tag">Next.js</span>
-          <span class="project-tag">Node.js</span>
-          <span class="project-tag">MongoDB</span>
-          <span class="project-tag">Agile</span>
-        </div>
-        <h3 class="project-name">Waddle — Stevens Student Job Portal</h3>
-        <p class="project-desc">
-          Leading a six-person agile team building a full-stack platform connecting Stevens students
-          with paid internships from Hoboken and NYC businesses. Built auth, dashboards, and posting
-          workflows targeting 3,000+ users. Managed sprint cycles, GitHub automation, and stakeholder comms.
-        </p>
-        <div class="project-stats">
-          <span class="p-stat">3,000+ Target Users</span>
-          <span class="p-stat">6-Person Agile Team</span>
-          <span class="p-stat">Technical PM Role</span>
-        </div>
-      </div>
-      <div class="project-arrow">↗</div>
-    </div>
 
     <div class="project-item reveal">
       <span class="project-num">03</span>
@@ -1147,20 +1150,38 @@ footer p {
 
     <div class="exp-item reveal">
       <div class="exp-meta">
-        <div class="exp-period">Aug 2024 — Present</div>
+        <div class="exp-period">May 2026 — Present</div>
+        <div class="exp-org">Hudson Golf</div>
+        <div class="exp-badge">IT & Customer Support</div>
+      </div>
+      <div class="exp-body">
+        <h3 class="exp-role">IT Support & Hospitality Associate</h3>
+        <div class="exp-highlight">
+          Keep customer-facing TrackMan simulator systems running reliably in a fast-paced hospitality environment.
+        </div>
+        <ul class="exp-bullets">
+          <li>Troubleshoot connectivity, calibration, configuration, and interface issues to minimize guest downtime</li>
+          <li>Translate technical settings and gameplay into clear guidance for nontechnical users</li>
+          <li>Balance frontline technical support with hosting, service, and day-to-day operations</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item reveal">
+      <div class="exp-meta">
+        <div class="exp-period">Aug 2025 — Present</div>
         <div class="exp-org">Stevens Software Engineering Club</div>
         <div class="exp-badge">Leadership</div>
       </div>
       <div class="exp-body">
         <h3 class="exp-role">Technical Project Manager</h3>
         <div class="exp-highlight">
-          Led a six-member agile team delivering a full-stack platform from concept to MVP, managing roadmap, sprints, and stakeholder communication end-to-end.
+          Lead a six-person cross-functional team building a student job-portal MVP, from roadmap and feature priorities through sprint delivery.
         </div>
         <ul class="exp-bullets">
-          <li>Defined product roadmap and sprint cycles, increasing team engagement by 25%</li>
-          <li>Implemented GitHub automation and retrospective processes, improving delivery efficiency by 30%</li>
-          <li>Facilitated technical decision-making and stakeholder alignment across the full development lifecycle</li>
-          <li>Owned system architecture design for Alset, an autonomous vehicle management system</li>
+          <li>Coordinate the roadmap, feature priorities, sprint execution, and stakeholder communication</li>
+          <li>Introduced GitHub Actions and code-review practices, reducing integration conflicts by 30%</li>
+          <li>Facilitate technical decisions and keep a six-person team aligned on shippable milestones</li>
         </ul>
       </div>
     </div>
@@ -1172,14 +1193,14 @@ footer p {
         <div class="exp-badge">Operations</div>
       </div>
       <div class="exp-body">
-        <h3 class="exp-role">Operations Associate</h3>
+        <h3 class="exp-role">Operations Data Analyst</h3>
         <div class="exp-highlight">
           Optimized operational workflows and built internal reporting systems that reduced discrepancies and improved team throughput.
         </div>
         <ul class="exp-bullets">
           <li>Optimized workflows and standardized processes, increasing throughput by 15%</li>
           <li>Mentored 10+ employees on operational best practices</li>
-          <li>Built reporting systems reducing reconciliation discrepancies by 20%</li>
+          <li>Built Python reporting workflows that reduced reconciliation discrepancies by 20%</li>
         </ul>
       </div>
     </div>
@@ -1213,11 +1234,12 @@ footer p {
       <div class="skill-col-title">Frameworks & Tools</div>
       <div class="skill-list">
         <div class="skill-entry">Next.js / React <span class="skill-dot active"></span></div>
+        <div class="skill-entry">FastAPI <span class="skill-dot active"></span></div>
         <div class="skill-entry">Node.js <span class="skill-dot active"></span></div>
         <div class="skill-entry">PostgreSQL / Prisma <span class="skill-dot active"></span></div>
         <div class="skill-entry">MongoDB <span class="skill-dot active"></span></div>
         <div class="skill-entry">Git / GitHub <span class="skill-dot active"></span></div>
-        <div class="skill-entry">Docker <span class="skill-dot"></span></div>
+        <div class="skill-entry">Docker / GitHub Actions <span class="skill-dot active"></span></div>
         <div class="skill-entry">Pandas / NumPy <span class="skill-dot"></span></div>
         <div class="skill-entry">Scikit-learn <span class="skill-dot"></span></div>
       </div>
@@ -1229,7 +1251,7 @@ footer p {
         <div class="skill-entry">System Architecture <span class="skill-dot active"></span></div>
         <div class="skill-entry">Agile / Sprint PM <span class="skill-dot active"></span></div>
         <div class="skill-entry">Full-Stack Development <span class="skill-dot active"></span></div>
-        <div class="skill-entry">API Design <span class="skill-dot active"></span></div>
+        <div class="skill-entry">REST APIs / WebSockets <span class="skill-dot active"></span></div>
         <div class="skill-entry">OS & Systems Programming <span class="skill-dot active"></span></div>
         <div class="skill-entry">Data Structures & Algorithms <span class="skill-dot"></span></div>
         <div class="skill-entry">Computer Architecture <span class="skill-dot"></span></div>
